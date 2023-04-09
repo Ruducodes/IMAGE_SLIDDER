@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000000;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 75vw;
+  height: 50vmin;
+}
+img {
+  flex: 1;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  filter: grayscale(100%) brightness(75%);
+  transition: all .5s;
+}
+img:hover{
+  flex: 8;
+  filter: grayscale(0%) brightness(115%);
+}
